@@ -1,5 +1,5 @@
-PURPOSETAG=other
-EXPIREON=2024-12-31
+# PURPOSETAG=other
+# EXPIREON=2025-03-12
 
 source config.sh
 
@@ -9,6 +9,7 @@ OM_VERSION=https://downloads.mongodb.com/on-prem-mms/rpm/mongodb-mms-8.0.0.500.2
 APPDB_VERSION=https://repo.mongodb.org/yum/amazon/2023/mongodb-org/8.0/x86_64/RPMS/mongodb-org-server-8.0.1-1.amzn2023.x86_64.rpm
 
 export AWS_PAGER=""
+export AWS_DEFAULT_PROFILE=sam
 # start instance to run Ops Manager
 # t3a.medium has 4GB RAM - should be enough for a demo config
 echo "Spinning up AWS instance for Ops Manager"
